@@ -4,6 +4,7 @@
 
 # ignora quaisquer diretórios chamados "metadata"
 .binares/
+.vscode/
 
 # ignora os arquivos
 .tubedlc
