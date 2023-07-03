@@ -2,9 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "tubedlc.h"
+
 char id_video[1024];
 
-// Menu de ajuda do programa
 void help() {
 	printf("ytdlc: Download de Vídeos e Músicas com youtube-dl\n");
 	printf("--------------------------------------------------\n");
@@ -29,7 +30,6 @@ void help() {
 	return;
 }
 
-// Mostra a versão do programa e do youtube-dl
 void version() {
 
 	char version[100] = "1.0";
@@ -41,7 +41,6 @@ void version() {
 	return;
 }
 
-// Intro do programa
 void intro() {
 
 	char current_dir[1024];
@@ -59,7 +58,6 @@ void intro() {
 	return;
 }
 
-// Conversão do vídeo para MP3
 void download_mp3(char id_video[]) {
 
 	char youtube_dl_command[1024];
@@ -70,7 +68,6 @@ void download_mp3(char id_video[]) {
 	return;
 }
 
-// Conversão do vídeo para WAV
 void download_wav(char id_video[]) {
 
 	char youtube_dl_command[1024];
@@ -81,7 +78,6 @@ void download_wav(char id_video[]) {
 	return;
 }
 
-// Download do vídeo para MP4
 void download_mp4(char id_video[]) {
 
 	char youtube_dl_command[1024];
@@ -92,7 +88,6 @@ void download_mp4(char id_video[]) {
 	return;
 }
 
-// Conversão do vídeo para MP4
 void download_mp4_conv(char id_video[]) {
 
 	char youtube_dl_command[1024];
@@ -103,7 +98,6 @@ void download_mp4_conv(char id_video[]) {
 	return;
 }
 
-// Download do vídeo para WEBM
 void download_webm(char id_video[]) {
 
 	char youtube_dl_command[1024];
@@ -114,7 +108,6 @@ void download_webm(char id_video[]) {
 	return;
 }
 
-// Conversão do vídeo para WEBM
 void download_webm_conv(char id_video[]) {
 
 	char youtube_dl_command[1024];
@@ -125,7 +118,6 @@ void download_webm_conv(char id_video[]) {
 	return;
 }
 
-// Atualização do youtube-dl
 void youtube_dl_update() {
 
 	char youtube_dl_command[1024];
@@ -138,7 +130,6 @@ void youtube_dl_update() {
 	return;
 }
 
-// Método principal do programa
 int main(int argc, char *argv[]) {
 
 	int i;
