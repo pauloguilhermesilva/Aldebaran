@@ -1,10 +1,10 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 
 #include "tubedlc.h"
-
-char id_video[1024];
 
 void help() {
 	printf("ytdlc: Download de Vídeos e Músicas com youtube-dl\n");
@@ -44,7 +44,7 @@ void version() {
 void intro() {
 
 	char current_dir[1024];
-	getcwd(current_dir);
+	getcwd(current_dir, sizeof(current_dir));
 
 	printf("======================================================\n");
 	printf("# ytdlc: Download de Vídeos e Músicas com youtube-dl #\n");

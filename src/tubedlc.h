@@ -8,3 +8,6 @@ void download_mp4_conv(char id_video[]);
 void download_webm(char id_video[]);
 void download_webm_conv(char id_video[]);
 void youtube_dl_update();
+
+
+char id_video[1024];
