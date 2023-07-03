@@ -1,1 +1,9 @@
 
+# ignora os arquivos com extensões 
+.gitignore
+
+# ignora quaisquer diretórios chamados "metadata"
+.binares/
+
+# ignora os arquivos
+.tubedlc
